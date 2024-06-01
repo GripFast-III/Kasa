@@ -1,9 +1,20 @@
-function Hello(props) {
+/*function Hello(props) {
   return (
     <div>
       <p>Hello {props.name}</p>
     </div>
   );
 }
+
+export default Hello;
+*/
+
+const Hello = (props) => {
+  return (
+    <div>
+      <p>Hello {props.name}</p>
+    </div>
+  );
+};
 
 export default Hello;
