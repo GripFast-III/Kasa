@@ -1,5 +1,6 @@
 import React from "react"
-import Hello from "./Components/hello";
+//import Hello from "./Components/hello";
+import Header from "./Components/Header";
 import Banner from "./Components/Banner/banner";
 import Gallery from "./Components/Gallery/index"
 import Footer from "./Components/Footer/footer";
@@ -9,9 +10,7 @@ import "./Styles/App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Hello name="Roger" />
-      </header>
+      <Header />
       <Banner />
       <Gallery />
       <Footer />

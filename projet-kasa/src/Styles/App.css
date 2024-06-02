@@ -33,22 +33,22 @@
   width: 100%;
 }
 
-.up {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex: 9;
-  width: 100%;
+  padding: 3%;
 }
 
 .imglogo {
   display: flex;
-  flex: 6;
+  flex: 7;
   width: 50%;
 }
 
 .navigation {
-  flex: 3;
+  flex: 2;
   align-content: center;
   width: 50%;
 }
