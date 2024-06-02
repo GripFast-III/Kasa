@@ -14,18 +14,95 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   /*min-height: 100vh;*/
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 3%;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.footer__logo {
+  width: 100%;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 9;
+  width: 100%;
+}
+
+.imglogo {
+  display: flex;
+  flex: 6;
+  width: 50%;
+}
+
+.navigation {
+  flex: 3;
+  align-content: center;
+  width: 50%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.banner {
+  padding: 2%;
+}
+
+.bannerImg img {
+  width: 100%;
+}
+
+.gallery {
+  padding: 3%;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+}
+
+.cards {
+  width: 29%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 2%;
+  background-color: red;
+}
+
+footer {
+  background-color: black;
+  margin-top: 3%;
 }
 
 @keyframes App-logo-spin {

@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react"
 import Hello from "./Components/hello";
+import Banner from "./Components/Banner/banner";
+import Gallery from "./Components/Gallery/index"
 import Footer from "./Components/Footer/footer";
+
 import "./Styles/App.css";
-//import Banner from "./Components/Banner";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Hello name="Roger" />
-        <Hello name="tata" />
       </header>
-
+      <Banner />
+      <Gallery />
       <Footer />
     </div>
   );

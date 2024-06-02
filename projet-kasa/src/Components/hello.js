@@ -1,18 +1,18 @@
-/*function Hello(props) {
-  return (
-    <div>
-      <p>Hello {props.name}</p>
-    </div>
-  );
-}
+import React from "react";
+import logoKasa from "./../Assets/LOGO.png";
 
-export default Hello;
-*/
-
-const Hello = (props) => {
+const Hello = () => {
   return (
-    <div>
-      <p>Hello {props.name}</p>
+    <div className="up">
+      <div className="imglogo">
+        <img src={logoKasa} alt="Logo Kasa" />
+      </div>
+      <div className="navigation">
+        <nav>
+          <a href="/">Accueil</a>
+          <a href="/">À propos</a>
+        </nav>
+      </div>
     </div>
   );
 };
