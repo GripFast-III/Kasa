@@ -28,12 +28,36 @@ const Gallery = () => {
     return (
       <section className="gallery">
         <div className='cardList'>
-            <div className="cards">Card 1</div>
-            <div className="cards">Card 2</div>
-            <div className="cards">Card 3</div>
-            <div className="cards">Card 4</div>
-            <div className="cards">Card 5</div>
-            <div className="cards">Card 6</div>
+            <div className="cards">
+                <div className="cardTitle">
+                    Titre de la <br/> location
+                </div>
+            </div>
+            <div className="cards">
+                <div className="cardTitle">
+                    Titre de la <br/> location
+                </div>
+            </div>
+            <div className="cards">
+                <div className="cardTitle">
+                    Titre de la <br/> location
+                </div>
+            </div>
+            <div className="cards">
+                <div className="cardTitle">
+                    Titre de la <br/> location
+                </div>
+            </div>
+            <div className="cards">
+                <div className="cardTitle">
+                    Titre de la <br/> location
+                </div>
+            </div>
+            <div className="cards">
+                <div className="cardTitle">
+                    Titre de la <br/> location
+                </div>
+            </div>
         </div>
       </section>
     );

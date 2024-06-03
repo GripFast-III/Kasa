@@ -98,6 +98,15 @@ a:hover {
   border-radius: 10px;
   margin: 2%;
   background-color: red;
+  color: white;
+}
+
+.cardTitle {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  justify-content: left;
+  align-items: end;
 }
 
 footer {
