@@ -1,13 +1,177 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 9;
+  padding: 3%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: white;
+  /*min-height: 100vh;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 3%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.footer__logo {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 9;
+  padding: 3%;
+}
+
+.imglogo {
+  display: flex;
+  flex: 7;
+  width: 50%;
+}
+
+.navigation {
+  flex: 2;
+  align-content: center;
+  width: 50%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.bannerHome {
+  padding: 2%;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./../Assets/IMG.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  color: white;
+  width: 100%;
+  height: 8rem;
+}
+
+.banner__title {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.banner__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerImg img {
+  width: 100%;
+}
+
+.gallery {
+  padding: 3%;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+}
+
+.cards {
+  width: 29%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 2%;
+  background-color: red;
+  color: white;
+}
+
+.cardTitle {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  justify-content: left;
+  align-items: end;
+}
+
+footer {
+  background-color: black;
+  margin-top: 3%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

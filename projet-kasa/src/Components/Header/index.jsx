@@ -24,18 +24,27 @@ export default Header;
 */
 
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logoKasa from "./../../Assets/LOGO.png";
 
 const Header = () => {
   return (
-    <header>
+    <header className="up">
       <div className="imglogo">
         <img src={logoKasa} alt="Logo Kasa" />
       </div>
       <div className="navigation">
-        <nav>
+        {/* <nav>
           <a href="/">Accueil</a>
           <a href="/">À propos</a>
+        </nav> */}
+        <nav className="header__nav">
+          <NavLink to="/" className="header__link">
+            Accueil
+          </NavLink>
+          <NavLink to="/about" className="header__link">
+            À propos
+          </NavLink>
         </nav>
       </div>
     </header>

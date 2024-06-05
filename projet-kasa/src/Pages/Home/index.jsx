@@ -20,14 +20,19 @@ return (
 export default Home;
 */
 
-import React from 'react';
+import React from "react";
+import Banner from "./../../Components/Banner";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>Accueil</h1>
-        </div>
-    );
+  return (
+    <div className="bannerHome">
+      <Banner
+        className="bannerTitleHome"
+        title={`Chez vous, partout et ailleurs`}
+        page="home"
+      />
+    </div>
+  );
 };
 
 export default Home;
