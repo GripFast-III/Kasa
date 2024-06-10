@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../../Components/Banner";
+import Footer from "../../Components/Footer";
 
 const housing = () => {
   <>
@@ -13,6 +14,7 @@ const housing = () => {
         <div className="carousel"></div>
       </div>
     </section>
+    <Footer />
   </>;
 };
 
