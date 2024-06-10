@@ -14,14 +14,18 @@
 // export default Card;
 
 import React from "react";
+import { Link } from "react-router-dom";
+
 //import { getData, getDataById, getDataByProperty } from "../../Utils/get";
 
-const Card = ({ id, cover, title }) => {
+const Card = ({ id, housing, page }) => {
   return (
-    <div className="card" key={id}>
-      <img src={cover} alt={title} className="card-cover" />
-      <div className="card-title">{title}</div>
-    </div>
+    <Link to={`/housing/${housing.id}`}>
+      <div className="card" key={housing.id}>
+        <img src={housing.cover} alt={housing.title} className="card-cover" />
+        <div className="card-title">{housing.title}</div>
+      </div>
+    </Link>
   );
 };
 

@@ -13,7 +13,7 @@ const Home = () => {
         />
       </div>
       <section className="gallerySection">
-        <Gallery />
+        <Gallery page="home" />
       </section>
     </div>
   );

@@ -1,21 +1,18 @@
 import React from "react";
-import Banner from "../../Components/Banner";
-import Footer from "../../Components/Footer";
+import { useParams } from "react-router-dom";
 
 const housing = () => {
-  <>
-    {
-      <div className="bannerAbout">
-        <Banner page="About" />
-      </div>
-    }
-    <section className="houses">
-      <div className="housingContainer">
-        <div className="carousel"></div>
-      </div>
-    </section>
-    <Footer />
-  </>;
+  const { housingId } = useParams();
+  console.log("🚀 ~ housing ~ housingId:", housingId);
+  return (
+    <>
+      <section className="houses">
+        <div className="housingContainer">
+          <div className="carousel"></div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default housing;

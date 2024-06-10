@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import Chevron from "./../../Assets/down-chevron.png";
 
 export default function Collapse(props) {
+  console.log("🚀 ~ Collapse ~ props:", props);
   const [toggle, setToggle] = useState(false); // Définit le state du toggle (et false par défaut)
   const [heightEl, setHeightEl] = useState(); // Définit le state de la hauteur du collapse
 

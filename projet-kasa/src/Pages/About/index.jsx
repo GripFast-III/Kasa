@@ -38,7 +38,11 @@ const About = () => {
         {about_content.map((content, index) => (
           <div className="contentAbout" key={`about-${index}-${content.title}`}>
             <h2 className="aboutTitles">{content.title}</h2>
-            <Dropdown name={content.title} value={content.text} page="about" />
+            <Dropdown
+              name={content.title}
+              aboutText={content.text}
+              page="about"
+            />
           </div>
         ))}
       </section>

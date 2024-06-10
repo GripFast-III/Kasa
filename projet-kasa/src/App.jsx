@@ -29,7 +29,7 @@ import Footer from "./Components/Footer/index";
 import Home from "./Pages/Home";
 import Gallery from "./Components/Gallery";
 import About from "./Pages/About";
-//import Housing from "./Pages/Housing";
+import Housing from "./Pages/Housing";
 import Error from "./Pages/Error";
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/housing/:housingId" element={<Housing />} /> */}
+        <Route path="/housing/:housingId" element={<Housing />} />
         <Route path="*" element={<Error />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
