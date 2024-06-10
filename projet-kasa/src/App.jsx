@@ -27,6 +27,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer/index";
 import Home from "./Pages/Home";
+import Gallery from "./Components/Gallery";
 import About from "./Pages/About";
 //import Housing from "./Pages/Housing";
 import Error from "./Pages/Error";
@@ -40,7 +41,9 @@ const App = () => {
         <Route path="/about" element={<About />} />
         {/* <Route path="/housing/:housingId" element={<Housing />} /> */}
         <Route path="*" element={<Error />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
+
       <Footer />
     </Router>
   );

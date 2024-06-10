@@ -34,10 +34,6 @@ const Header = () => {
         <img src={logoKasa} alt="Logo Kasa" />
       </div>
       <div className="navigation">
-        {/* <nav>
-          <a href="/">Accueil</a>
-          <a href="/">À propos</a>
-        </nav> */}
         <nav className="header__nav">
           <NavLink to="/" className="header__link">
             Accueil

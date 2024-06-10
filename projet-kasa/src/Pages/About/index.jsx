@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
-//import Banner from "./../../Components/Banner";
-//import Dropdown from "./../../Components/Dropdown";
+import Banner from "./../../Components/Banner";
+import Dropdown from "./../../Components/Dropdown";
 
 const about_content = [
   {
@@ -29,16 +29,17 @@ const About = () => {
 
   return (
     <>
-      {/* <Banner page="About" /> */}
+      {
+        <div className="bannerAbout">
+          <Banner page="About" />
+        </div>
+      }
       <section className="about">
         {about_content.map((content, index) => (
-          //   <Dropdown
-          //     key={`about-${index}-${content.title}`}
-          //     name={content.title}
-          //     value={content.text}
-          //     page="about"
-          //   />
-          <h1 key={`about-${index}-${content.title}`}>{content.title}</h1>
+          <div className="contentAbout" key={`about-${index}-${content.title}`}>
+            <h2 className="aboutTitles">{content.title}</h2>
+            <Dropdown name={content.title} value={content.text} page="about" />
+          </div>
         ))}
       </section>
     </>
