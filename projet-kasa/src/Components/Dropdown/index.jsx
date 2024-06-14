@@ -20,6 +20,7 @@ export default function Collapse(props) {
   return (
     // Affiche le dropdown replié par défaut
     <div className={`collapse ${props.aboutStyle}`}>
+      {" "}
       <div onClick={toggleState} className="collapse__visible">
         <img
           className={toggle ? "chevron rotated" : "chevron"}
@@ -32,7 +33,7 @@ export default function Collapse(props) {
         className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
         style={{ height: toggle ? `${heightEl}` : "0px" }}
       >
-        <p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p>
+        <p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p>{" "}
       </div>
     </div>
   );
