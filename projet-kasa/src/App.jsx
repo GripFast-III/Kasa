@@ -21,9 +21,10 @@ const App = () => {
 export default App;
 */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //import './Styles/main.scss';
+import Loader from "./Components/Loader";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer/index";
 import Home from "./Pages/Home";
@@ -33,6 +34,21 @@ import Housing from "./Pages/Housing";
 import Error from "./Pages/Error";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simuler un délai de chargement
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Changez la durée selon vos besoins
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <Router>
       <Header />
@@ -43,7 +59,6 @@ const App = () => {
         <Route path="*" element={<Error />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
-
       <Footer />
     </Router>
   );
