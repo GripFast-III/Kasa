@@ -230,6 +230,172 @@ a:hover {
   align-items: end;
 }
 
+.houses {
+  margin: 3%;
+}
+
+.housingContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeCarousel {
+  margin-bottom: 3%;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+}
+
+.carousel__button {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  filter: invert(100%);
+  font-size: xxx-large;
+  transform: scaleY(3) scaleX(2.5);
+}
+
+.carousel__button--right {
+  right: 40px;
+}
+
+.carousel__button--left {
+  left: 40px;
+}
+
+.carousel img {
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+  border-radius: 25px;
+}
+
+.infosDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 2%;
+}
+
+.titleLogement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logementName {
+  margin: 0%;
+  color: #ff6060;
+}
+
+.logementLocation {
+  margin: 0%;
+}
+
+.proprioData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.proprioName {
+  display: flex;
+  width: 35%;
+}
+
+.proprioPic {
+  display: flex;
+  justify-content: end;
+  margin-left: -40px;
+}
+
+.proprioPic img {
+  border-radius: 70px;
+  width: 50%;
+  height: auto;
+}
+
+.tagsAndRate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+.tags {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #ff6060;
+  border-radius: 20px;
+  color: white;
+  padding: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.rate {
+  display: flex;
+  gap: 15px;
+  font-size: x-large;
+}
+
+.rate .filled-star {
+  color: #ff6060;
+}
+
+.rate .empty-star {
+  color: #dcdcdc;
+}
+
+.dropdownsLogement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 10;
+}
+
+.dropdownDescription {
+  flex: 5;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.dropdownDescription .collapse__visible,
+.dropdownEquipements .collapse__visible {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 10px;
+  transform: translateY(-65px);
+  height: 10px;
+  color: white;
+  padding: 1rem;
+}
+
+.dropdownEquipements {
+  flex: 5;
+  margin-left: 20px;
+}
+
 .about {
   display: flex;
   flex-direction: column;

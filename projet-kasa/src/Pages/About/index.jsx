@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import Banner from "./../../Components/Banner";
 import Dropdown from "./../../Components/Dropdown";
 
