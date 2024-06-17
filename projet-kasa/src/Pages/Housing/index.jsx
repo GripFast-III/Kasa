@@ -22,25 +22,25 @@ const Housing = () => {
         <div className="placeCarousel">
           <Carousel pictures={logement.pictures} />
         </div>
-        <div className="infosDescription">
+        <div className="titleTags">
           <div className="titleLogement">
             <h3 className="logementName">{logement.title}</h3>
             <p className="logementLocation">{logement.location}</p>
           </div>
-          <div className="proprioData">
-            <div className="proprioName">{logement.host.name}</div>
-            <div className="proprioPic">
-              <img src={logement.host.picture} alt="Propriétaire" />
-            </div>
-          </div>
-        </div>
-        <div className="tagsAndRate">
           <div className="tags">
             {logement.tags.map((tag, index) => (
               <span key={index} className="tag">
                 {tag}
               </span>
             ))}
+          </div>
+        </div>
+        <div className="proprioAndRate">
+          <div className="proprioData">
+            <div className="proprioName">{logement.host.name}</div>
+            <div className="proprioPic">
+              <img src={logement.host.picture} alt="Propriétaire" />
+            </div>
           </div>
           <div className="rate">
             {Array.from({ length: 5 }, (_, index) => (

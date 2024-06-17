@@ -282,18 +282,18 @@ a:hover {
   border-radius: 25px;
 }
 
-.infosDescription {
+.titleTags {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 2%;
 }
 
 .titleLogement {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 3%;
 }
 
 .logementName {
@@ -310,11 +310,15 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: end;
+  width: 20%;
+  padding-bottom: 2%;
 }
 
 .proprioName {
   display: flex;
   width: 35%;
+  text-align: right;
+  color: #ff6060;
 }
 
 .proprioPic {
@@ -329,11 +333,12 @@ a:hover {
   height: auto;
 }
 
-.tagsAndRate {
+.proprioAndRate {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 10%;
+  align-items: end;
+  transform: translateY(-130px);
 }
 
 .tags {
@@ -371,14 +376,15 @@ a:hover {
 .right img {
   cursor: pointer;
   width: 40%;
-  height: 70%;
+  height: 100%;
   filter: invert(100%);
 }
 
 .rate {
   display: flex;
-  gap: 15px;
+  gap: 8px;
   font-size: x-large;
+  width: 20%;
 }
 
 .rate .filled-star {
@@ -544,7 +550,45 @@ footer {
     flex-direction: column;
   }
 
+  .left img,
+  .right img {
+    height: 50%;
+  }
+
   .mobile-break {
     display: inline;
+  }
+
+  .tags {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+
+  .proprioAndRate {
+    flex-direction: row-reverse;
+    transform: translateX(0px);
+  }
+
+  .proprioData {
+    padding-bottom: 0%;
+  }
+
+  .proprioPic {
+    margin-left: 0px;
+  }
+
+  .dropdownsLogement {
+    flex-direction: column;
+    flex: 0;
+    gap: 6rem;
+    padding-top: 90px;
+  }
+
+  .dropdownDescription {
+    margin-right: 0px;
+  }
+
+  .dropdownEquipements {
+    margin-left: 0px;
   }
 }
