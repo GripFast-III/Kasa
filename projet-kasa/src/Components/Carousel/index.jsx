@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import logements from "./../../../src/logements.json";
+import ChevronLeft from "./../../Assets/left-chevron.png";
+import ChevronRight from "./../../Assets/right-chevron.png";
 
 const Carousel = () => {
   const { housingId } = useParams();
@@ -32,23 +34,41 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <button
+      <div className="left">
+        <img
+          src={ChevronLeft}
+          alt="Précédent"
+          className="carousel__chevron carousel__chevron--left"
+          onClick={handlePrev}
+        />
+      </div>
+      {/* <button
         className="carousel__button carousel__button--left"
         onClick={handlePrev}
       >
         &lt;
-      </button>
-      <img
-        src={pictures[currentIndex]}
-        alt={`Logement ${currentIndex + 1}`}
-        className="carousel__image"
-      />
-      <button
+      </button> */}
+      <div className="pictures">
+        <img
+          src={pictures[currentIndex]}
+          alt={`Logement ${currentIndex + 1}`}
+          className="carousel__image"
+        />
+      </div>
+      <div className="right">
+        <img
+          src={ChevronRight}
+          alt="Suivant"
+          className="carousel__chevron carousel__chevron--right"
+          onClick={handleNext}
+        />
+      </div>
+      {/* <button
         className="carousel__button carousel__button--right"
         onClick={handleNext}
       >
         &gt;
-      </button>
+      </button> */}
     </div>
   );
 };

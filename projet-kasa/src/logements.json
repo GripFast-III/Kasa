@@ -16,13 +16,13 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
 		},
 		"rating": "5",
-		"location": "Ile de France - Paris 17e",
+		"location": "Île de France - Paris 17e",
 		"equipments": [
 			"Équipements de base",
 			"Micro-Ondes",
 			"Douche italienne",
 			"Frigo",
-			"WIFI"
+			"Wifi"
 		],
 		"tags": [
 			"Batignolle",
@@ -41,7 +41,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 		],
-		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. À 3 minutes à pied du Canal Saint-Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
 		"host": {
 			"name": "Della Case",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -52,7 +52,7 @@
 			"Parking",
 			"Sèche Cheveux",
 			"Machine à laver",
-			"Wi-fi",
+			"Wifi",
 			"Cuisine équipée",
 			"Télévision"
 		],
@@ -80,7 +80,7 @@
 		"rating": "3",
 		"location": "Ile de France - Paris 20e",
 		"equipments": [
-			"Wi-fi",
+			"Wifi",
 			"Cuisine équipée",
 			"Télévision",
 			"Sèche Cheveux"
@@ -110,7 +110,7 @@
 		"location": "Ile de France - Paris 11e",
 		"equipments": [
 			"Micro-Ondes",
-			"Wi-fi",
+			"Wifi",
 			"Chambre Séparée",
 			"Climatisation",
 			"Télévision"
@@ -140,11 +140,11 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
 		},
 		"rating": "5",
-		"location": "Ile de France - Paris 10e",
+		"location": "Île de France - Paris 10e",
 		"equipments": [
 			"Frigo Américain",
 			"Sèche Cheveux",
-			"Wi-fi",
+			"Wifi",
 			"Chambre Séparée",
 			"Parking"
 		],
@@ -170,7 +170,7 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-3.jpg"
 		},
 		"rating": "5",
-		"location": "Ile de France - Paris 18e",
+		"location": "Île de France - Paris 18e",
 		"equipments": [
 			"Chambre Séparée",
 			"Parking"
@@ -197,11 +197,11 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
 		},
 		"rating": "3",
-		"location": "Ile de France - Paris 18e",
+		"location": "Île de France - Paris 18e",
 		"equipments": [
 			"Salle de bains",
 			"Frigo",
-			"Wi-fi",
+			"Wifi",
 			"Sèche Cheveux",
 			"Bureau",
 			"Parking"
@@ -230,9 +230,9 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-5.jpg"
 		},
 		"rating": "5",
-		"location": "Ile de France - Paris 6e",
+		"location": "Île de France - Paris 6e",
 		"equipments": [
-			"Wi-fi",
+			"Wifi",
 			"Sèche Cheveux",
 			"Machine à laver",
 			"Parking",
@@ -263,12 +263,12 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-6.jpg"
 		},
 		"rating": "4",
-		"location": "Ile de France - Paris 14e",
+		"location": "Île de France - Paris 14e",
 		"equipments": [
 			"Climatisation",
 			"Machine à laver",
 			"Sèche Cheveux",
-			"Wi-fi",
+			"Wifi",
 			"Parking"
 		],
 		"tags": [
@@ -293,13 +293,13 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-6.jpg"
 		},
 		"rating": "3",
-		"location": "Ile de France - Paris 11e",
+		"location": "Île de France - Paris 11e",
 		"equipments": [
 			"Vue Parc",
 			"Chauffage",
 			"Sèche linge",
 			"Sèche Cheveux",
-			"Wi-fi",
+			"Wifi",
 			"Ascenseur"
 		],
 		"tags": [
@@ -325,12 +325,12 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-7.jpg"
 		},
 		"rating": "4",
-		"location": "Ile de France - Paris 11e",
+		"location": "Île de France - Paris 11e",
 		"equipments": [
 			"Clic-clac",
 			"Four",
 			"Sèche Cheveux",
-			"Wi-fi"
+			"Wifi"
 		],
 		"tags": [
 			"Marais",
@@ -354,12 +354,12 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-8.jpg"
 		},
 		"rating": "3",
-		"location": "Ile de France - Paris 3e",
+		"location": "Île de France - Paris 3e",
 		"equipments": [
 			"Rangements",
 			"Lit",
 			"Sèche Cheveux",
-			"Wi-fi",
+			"Wifi",
 			"TV",
 			"Bouilloire"
 		],
@@ -388,7 +388,7 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-8.jpg"
 		},
 		"rating": "5",
-		"location": "Ile de France - Ecouen",
+		"location": "Île de France - Ecouen",
 		"equipments": [
 			"SDB",
 			"Cuisine équipée",
@@ -419,13 +419,13 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
 		},
 		"rating": "4",
-		"location": "Ile de France - Arnouville",
+		"location": "Île de France - Arnouville",
 		"equipments": [
 			"SDB",
 			"Cuisine équipée",
 			"Frigo",
 			"Bouilloire",
-			"WIFI",
+			"Wifi",
 			"Télévision",
 			"Cintres",
 			"Équipements de base"
@@ -453,13 +453,13 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
 		},
 		"rating": "3",
-		"location": "Ile de France - Arnouville",
+		"location": "Île de France - Arnouville",
 		"equipments": [
 			"Bouilloire",
 			"SDB",
 			"Cuisine équipée",
 			"Frigo",
-			"WIFI",
+			"Wifi",
 			"TV",
 			"Cintres",
 			"Four",
@@ -489,13 +489,13 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
 		},
 		"rating": "3",
-		"location": "Ile de France - La Défense",
+		"location": "Île de France - La Défense",
 		"equipments": [
 			"Baie vitrée",
 			"Télévision",
 			"Four",
 			"Frigo",
-			"Wi-fi",
+			"Wifi",
 			"Micro-Ondes",
 			"Parking"
 		],
@@ -522,13 +522,13 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
 		},
 		"rating": "4",
-		"location": "Ile de France - Levallois",
+		"location": "Île de France - Levallois",
 		"equipments": [
 			"Télévision",
 			"Four",
 			"Frigo",
 			"Hotte",
-			"Wi-fi",
+			"Wifi",
 			"Micro-Ondes"
 		],
 		"tags": [
@@ -549,10 +549,10 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
 		},
 		"rating": "2",
-		"location": "Ile de France - Paris 20e",
+		"location": "Île de France - Paris 20e",
 		"equipments": [
 			"Bouilloire",
-			"Wi-fi",
+			"Wifi",
 			"Micro-Ondes"
 		],
 		"tags": [
@@ -575,12 +575,12 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-11.jpg"
 		},
 		"rating": "4",
-		"location": "Ile de France - Paris 13e",
+		"location": "Île de France - Paris 13e",
 		"equipments": [
 			"Équipements de base",
 			"Four",
 			"Frigo",
-			"Wi-fi",
+			"Wifi",
 			"Micro-Ondes"
 		],
 		"tags": [
@@ -602,9 +602,9 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
 		},
 		"rating": "4",
-		"location": "Ile de France - Paris 13e",
+		"location": "Île de France - Paris 13e",
 		"equipments": [
-			"Wi-fi",
+			"Wifi",
 			"Équipements de base",
 			"Micro-Ondes",
 			"Frigo",

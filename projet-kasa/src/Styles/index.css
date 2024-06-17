@@ -246,6 +246,7 @@ a:hover {
 
 .carousel {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
@@ -261,12 +262,12 @@ a:hover {
   transform: scaleY(3) scaleX(2.5);
 }
 
-.carousel__button--right {
-  right: 40px;
+.right {
+  right: 0px;
 }
 
-.carousel__button--left {
-  left: 40px;
+.left {
+  left: 0px;
 }
 
 .carousel img {
@@ -345,6 +346,28 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.pictures {
+  width: 100%;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+}
+
+.left img,
+.right img {
+  cursor: pointer;
+  width: 40%;
+  height: 70%;
+  filter: invert(100%);
 }
 
 .rate {
