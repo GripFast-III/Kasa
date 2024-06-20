@@ -42,18 +42,17 @@ const Carousel = () => {
           onClick={handlePrev}
         />
       </div>
-      {/* <button
-        className="carousel__button carousel__button--left"
-        onClick={handlePrev}
-      >
-        &lt;
-      </button> */}
       <div className="pictures">
         <img
           src={pictures[currentIndex]}
           alt={`Logement ${currentIndex + 1}`}
           className="carousel__image"
         />
+        <div className="counter">
+          <div className="carousel__counter">
+            {currentIndex + 1} / {pictures.length}
+          </div>
+        </div>
       </div>
       <div className="right">
         <img
@@ -63,12 +62,6 @@ const Carousel = () => {
           onClick={handleNext}
         />
       </div>
-      {/* <button
-        className="carousel__button carousel__button--right"
-        onClick={handleNext}
-      >
-        &gt;
-      </button> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Banner from "./../../Components/Banner";
-import Dropdown from "./../../Components/Dropdown";
+import Dropdown from "../../Components/Dropdown";
 
 const about_content = [
   {
@@ -36,14 +36,13 @@ const About = () => {
       <section className="about">
         {about_content.map((content, index) => (
           <div className="contentAbout" key={`about-${index}-${content.title}`}>
-            <div className="titleH2">
-              <h2 className="aboutTitles">{content.title}</h2>
+            <div className="dropdownDescription">
+              <Dropdown
+                title={content.title}
+                content={content.text}
+                page="about"
+              />
             </div>
-            <Dropdown
-              name={content.title}
-              aboutText={content.text}
-              page="about"
-            />
           </div>
         ))}
       </section>

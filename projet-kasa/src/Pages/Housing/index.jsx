@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import logements from "./../../../src/logements.json";
-import DropdownHousing from "./../../Components/DropdownHousing";
+import logements from "./../../../src/logements.json"; // à changer par une url (getDataById)
+import Dropdown from "../../Components/Dropdown";
 import Carousel from "../../Components/Carousel";
 import ErrorPage from "../Error";
 
@@ -57,16 +57,10 @@ const Housing = () => {
         </div>
         <div className="dropdownsLogement">
           <div className="dropdownDescription">
-            <DropdownHousing
-              title="Description"
-              content={logement.description}
-            />
+            <Dropdown title="Description" content={logement.description} />
           </div>
           <div className="dropdownEquipements">
-            <DropdownHousing
-              title="Équipements"
-              content={logement.equipments}
-            />
+            <Dropdown title="Équipements" content={logement.equipments} />
           </div>
         </div>
       </div>

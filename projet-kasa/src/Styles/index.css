@@ -116,6 +116,10 @@ header nav a {
   color: black;
 }
 
+.header__link.active {
+  text-decoration: underline;
+}
+
 a:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -165,15 +169,6 @@ a:hover {
   position: absolute;
   border-radius: 10px;
 }
-/* .banner__overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-} */
 
 .bannerImg img {
   width: 100%;
@@ -210,7 +205,7 @@ a:hover {
 .gallery a {
   display: flex;
   text-decoration: none;
-  width: 100%;
+  width: 240px;
 }
 
 .cardList {
@@ -223,11 +218,27 @@ a:hover {
 }
 
 .card {
-  /*display: flex;
-  flex-direction: column;*/
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  width: 240px;
+  height: 240px;
 }
+
+.overlayCard {
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
+  top: -243.5px;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* .overlayCard::before {
+  align-items: center;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+} */
 
 .card img {
   width: 100%;
@@ -242,7 +253,7 @@ a:hover {
 .card-title {
   color: white;
   text-decoration: none;
-  transform: translateY(-45px);
+  transform: translateY(200px);
   margin-left: 10px;
 }
 
@@ -296,6 +307,18 @@ a:hover {
   filter: invert(100%);
   font-size: xxx-large;
   transform: scaleY(3) scaleX(2.5);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-80px);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  bottom: 10px;
+  z-index: 1;
 }
 
 .right {
@@ -380,13 +403,15 @@ a:hover {
 }
 
 .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10px;
   background-color: #ff6060;
   border-radius: 20px;
   color: white;
   padding: 2%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .pictures {
@@ -406,8 +431,8 @@ a:hover {
 .left img,
 .right img {
   cursor: pointer;
-  width: 40%;
-  height: 100%;
+  width: 30%;
+  height: 60%;
   filter: invert(100%);
 }
 
@@ -495,7 +520,8 @@ ul {
 .chevron {
   float: right;
   filter: invert(100%);
-  width: 5%;
+  width: 32px;
+  height: 32px;
   /* transform: rotate(180deg); */
   transition: 0.5s;
 }
@@ -508,9 +534,9 @@ ul {
   transform: rotate(180deg);
 }
 
-.collapse {
+/* .collapse {
   margin-bottom: -75px;
-}
+} */
 
 .collapse__visible {
   display: flex;
@@ -579,6 +605,7 @@ footer {
   .gallery {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .left img,
