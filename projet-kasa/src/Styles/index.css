@@ -196,30 +196,23 @@ a:hover {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 30px;
   border-radius: 10px;
   margin: 3%;
   padding: 3%;
   background: rgb(244, 244, 244);
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery a {
   display: flex;
   text-decoration: none;
-  width: 240px;
+  flex: 0 1 calc(30% - 10px);
+  justify-content: center;
 }
-
-/* .cardList {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-} */
 
 .card {
   width: 240px;
@@ -250,26 +243,6 @@ a:hover {
   transform: translateY(200px);
   margin-left: 10px;
 }
-
-/* .cards {
-  width: 29%;
-  height: 35vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  margin: 2%;
-  background-color: red;
-  color: white;
-}
-
-.cardTitle {
-  display: flex;
-  width: 90%;
-  height: 90%;
-  justify-content: left;
-  align-items: end;
-} */
 
 .houses {
   margin: 3%;
@@ -589,12 +562,6 @@ footer {
     flex: 3;
   }
 
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .left img,
   .right img {
     height: 50%;
@@ -625,7 +592,7 @@ footer {
   .dropdownsLogement {
     flex-direction: column;
     flex: 0;
-    gap: 6rem;
+    gap: 2rem;
     padding-top: 90px;
   }
 

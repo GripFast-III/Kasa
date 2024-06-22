@@ -63,10 +63,10 @@
 }
 
 @media screen and (max-width: 767px) {
-.dropdownsLogement {
+  .dropdownsLogement {
     flex-direction: column;
     flex: 0;
-    gap: 6rem;
+    gap: 2rem;
     padding-top: 90px;
   }
 
