@@ -23,7 +23,7 @@ export default App;
 
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-//import './Styles/main.scss';
+// import "./Styles/main.scss";
 import Loader from "./Components/Loader";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer/index";

@@ -68,7 +68,6 @@ code {
 
 .App-header {
   background-color: white;
-  /*min-height: 100vh;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -143,7 +142,6 @@ a:hover {
   -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
   color: white;
-  /* width: 100%; */
   height: 8rem;
   margin: 1%;
 }
@@ -192,6 +190,11 @@ a:hover {
   background-position: center;
 }
 
+.gallerySection {
+  display: flex;
+  justify-content: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,6 +203,7 @@ a:hover {
   margin: 3%;
   padding: 3%;
   background: rgb(244, 244, 244);
+  width: 100%;
 }
 
 .gallery a {
@@ -208,37 +212,27 @@ a:hover {
   width: 240px;
 }
 
-.cardList {
+/* .cardList {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   border-radius: 25px;
-}
+} */
 
 .card {
-  /* width: 100%;
-  height: 100%; */
   width: 240px;
   height: 240px;
 }
 
 .overlayCard {
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
-  top: -243.5px;
+  top: -242.5px;
   height: 100%;
   position: relative;
   border-radius: 10px;
 }
-
-/* .overlayCard::before {
-  align-items: center;
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
-  bottom: 0;
-  height: 100%;
-  position: absolute;
-} */
 
 .card img {
   width: 100%;
@@ -257,7 +251,7 @@ a:hover {
   margin-left: 10px;
 }
 
-.cards {
+/* .cards {
   width: 29%;
   height: 35vh;
   display: flex;
@@ -275,7 +269,7 @@ a:hover {
   height: 90%;
   justify-content: left;
   align-items: end;
-}
+} */
 
 .houses {
   margin: 3%;
@@ -510,11 +504,9 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* background-color: #ff6060; */
   border-radius: 5px;
   color: white;
   margin: 2%;
-  /*height: 50px;*/
 }
 
 .chevron {
@@ -522,7 +514,6 @@ ul {
   filter: invert(100%);
   width: 32px;
   height: 32px;
-  /* transform: rotate(180deg); */
   transition: 0.5s;
 }
 
@@ -533,10 +524,6 @@ ul {
 .chevron.rotated {
   transform: rotate(180deg);
 }
-
-/* .collapse {
-  margin-bottom: -75px;
-} */
 
 .collapse__visible {
   display: flex;

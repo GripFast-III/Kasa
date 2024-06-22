@@ -34,34 +34,40 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <div className="left">
-        <img
-          src={ChevronLeft}
-          alt="Précédent"
-          className="carousel__chevron carousel__chevron--left"
-          onClick={handlePrev}
-        />
-      </div>
+      {pictures.length > 1 && (
+        <div className="left">
+          <img
+            src={ChevronLeft}
+            alt="Précédent"
+            className="carousel__chevron carousel__chevron--left"
+            onClick={handlePrev}
+          />
+        </div>
+      )}
       <div className="pictures">
         <img
           src={pictures[currentIndex]}
           alt={`Logement ${currentIndex + 1}`}
           className="carousel__image"
         />
-        <div className="counter">
-          <div className="carousel__counter">
-            {currentIndex + 1} / {pictures.length}
+        {pictures.length > 1 && (
+          <div className="counter">
+            <div className="carousel__counter">
+              {currentIndex + 1} / {pictures.length}
+            </div>
           </div>
+        )}
+      </div>
+      {pictures.length > 1 && (
+        <div className="right">
+          <img
+            src={ChevronRight}
+            alt="Suivant"
+            className="carousel__chevron carousel__chevron--right"
+            onClick={handleNext}
+          />
         </div>
-      </div>
-      <div className="right">
-        <img
-          src={ChevronRight}
-          alt="Suivant"
-          className="carousel__chevron carousel__chevron--right"
-          onClick={handleNext}
-        />
-      </div>
+      )}
     </div>
   );
 };

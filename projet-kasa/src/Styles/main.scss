@@ -1,12 +1,13 @@
-// @import "./Utils/variables";
+@import "./Utils/variables";
 // @import "./Utils/mixins";
 
-@import "./../Components/Banner/Banner";
-@import "./../Components/Cards";
-@import "./../Components/Carousel";
-@import "./../Components/Dropdown";
-@import "./../Components/ErrorPage";
-@import "./../Components/Footer";
-@import "./../Components/Gallery";
-@import "./../Components/Header";
-@import "./../Components/Loader";
+@import "./../Styles/index.css";
+@import "./../Styles/App.css";
+@import "./../Components/Banner/banner.scss";
+@import "./../Components/Card/card.scss";
+@import "./../Components/Carousel/carousel.scss";
+@import "./../Components/Dropdown/dropdown.scss";
+@import "./../Components/Footer/footer.scss";
+@import "./../Components/Gallery/gallery.scss";
+@import "./../Components/Header/header.scss";
+@import "./../Components/Loader/loader.scss";
