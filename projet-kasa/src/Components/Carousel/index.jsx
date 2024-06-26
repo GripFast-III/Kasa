@@ -1,20 +1,44 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import logements from "./../../../src/logements.json";
+//import logements from "./../../../src/logements.json";
+import { getDataById } from "./../../Utils/get";
+import Loader from "./../../Components/Loader";
 import ChevronLeft from "./../../Assets/left-chevron.png";
 import ChevronRight from "./../../Assets/right-chevron.png";
+import ErrorPage from "./../../Pages/Error";
 
 const Carousel = () => {
   const { housingId } = useParams();
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [pictures, setPictures] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const logement = logements.find((logement) => logement.id === housingId);
-    if (logement) {
-      setPictures(logement.pictures);
-    }
+    const fetchPictures = async () => {
+      try {
+        const logement = await getDataById("/logements.json", housingId);
+        if (logement && logement.pictures) {
+          setPictures(logement.pictures);
+        } else {
+          setError(true);
+        }
+      } catch (error) {
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchPictures();
   }, [housingId]);
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error || pictures.length === 0) {
+    return <ErrorPage />;
+  }
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>

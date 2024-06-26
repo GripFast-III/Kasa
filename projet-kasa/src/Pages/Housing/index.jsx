@@ -6,12 +6,13 @@ import Carousel from "../../Components/Carousel";
 import ErrorPage from "../Error";
 import Loader from "./../../Components/Loader";
 
-const Housing = async () => {
+const Housing = () => {
   const { housingId } = useParams();
-  console.log("🚀 ~ housing ~ housingId:", housingId);
+  console.log("🚀 ~ Housing ~ housingId:", housingId);
   // Trouve le logement correspondant
   const [logement, setLogement] = useState();
   const [loading, setLoading] = useState(true);
+  //const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchLogement = async () => {

@@ -43,6 +43,7 @@ const getDataById = async (url, id) => {
     return dataById;
   } catch (error) {
     console.log(`Erreur lors de la récupération des données : ${error}`);
+    throw error;
   }
 };
 
