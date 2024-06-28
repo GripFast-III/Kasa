@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <header className="up">
       <div className="imglogo">
-        <img src={logoKasa} alt="Logo Kasa" />
+        <a href="https://kasa-jp.netlify.app/">
+          <img src={logoKasa} alt="Logo Kasa" />
+        </a>
       </div>
       <div className="navigation">
         <nav className="header__nav">

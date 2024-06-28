@@ -93,10 +93,12 @@ header {
   padding: 3%;
 }
 
+
 .imglogo {
   display: flex;
-  flex: 7;
+  flex: 9;
   width: 50%;
+  cursor: pointer;
 }
 
 .navigation {
@@ -216,7 +218,7 @@ a:hover {
 
 .card {
   width: 330px;
-  height: 330px;
+  height: 360px;
 }
 
 .overlayCard {
@@ -584,6 +586,7 @@ footer {
 
   .proprioData {
     padding-bottom: 0%;
+    width: 30%;
   }
 
   .proprioPic {
