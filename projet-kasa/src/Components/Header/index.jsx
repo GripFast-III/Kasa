@@ -1,14 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoKasa from "./../../Assets/LOGO.png";
 
 const Header = () => {
   return (
     <header className="up">
       <div className="imglogo">
-        <a href="https://kasa-jp.netlify.app/">
+        <Link to="/" className="header__link">
           <img src={logoKasa} alt="Logo Kasa" />
-        </a>
+        </Link>
       </div>
       <div className="navigation">
         <nav className="header__nav">

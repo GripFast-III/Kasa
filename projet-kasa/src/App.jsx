@@ -12,22 +12,25 @@ import Error from "./Pages/Error";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
 
   useEffect(() => {
-    // Loader de chargement
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    if (!hasLoadedOnce) {
+      // Display loader only the first time
+      const timer = setTimeout(() => {
+        setLoading(false);
+        setHasLoadedOnce(true);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [hasLoadedOnce]);
 
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
+  if (loading && !hasLoadedOnce) {
     return <Loader />;
   }
 
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,8 +40,14 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 
-export default App;
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;

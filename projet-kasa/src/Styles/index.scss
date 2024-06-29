@@ -96,20 +96,25 @@ header {
 
 .imglogo {
   display: flex;
-  flex: 9;
-  width: 50%;
+  flex: 5 1;
+  width: 100%;
   cursor: pointer;
 }
 
 .navigation {
-  flex: 2;
+  display: flex;
+  justify-content: end;
   align-content: center;
-  width: 50%;
+  width: 100%;
+  flex: 1 1;
+  margin: 2%;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
+  gap: 10%;
+  width: 100%;
 }
 
 header nav a {
@@ -217,13 +222,13 @@ a:hover {
 }
 
 .card {
-  width: 330px;
+  width: 360px;
   height: 360px;
 }
 
 .overlayCard {
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
-  top: -333.5px;
+  top: -363.5px;
   height: 100%;
   position: relative;
   border-radius: 10px;
@@ -242,7 +247,7 @@ a:hover {
 .card-title {
   color: white;
   text-decoration: none;
-  transform: translateY(280px);
+  transform: translateY(300px);
   margin-left: 10px;
 }
 
@@ -562,7 +567,7 @@ footer {
   }
 
   .navigation {
-    flex: 3;
+    flex: 2;
   }
 
   .left img,
